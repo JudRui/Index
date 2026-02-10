@@ -7474,12 +7474,12 @@ function BeeSwarmSimulator(DATA){
             
             update:(amount,player)=>{
                 
-                player.convertRateAtHive*=amount*37.5+1.1
-                player.pollenFromTools*=amount*50+1.05
-                player.pollenFromBees*=amount*50+1.05
-                player.honeyPerPollen*=amount*10+1.01
-                player.lootLuck*=amount*22.5+1.01
-                player.capacity*=5
+                player.convertRateAtHive *= (amount * 37.5 + 1.1)
+                player.pollenFromTools *= (amount * 50 + 1.05)
+                player.pollenFromBees *= (amount * 50 + 1.05)
+                player.honeyPerPollen *= (amount * 10 + 1.01)
+                player.lootLuck *= (amount * 22.5 + 1.01)
+                player.capacity *= (amount * 5 + 1)
             },
             
             getMessage:(amount)=>{
