@@ -5516,8 +5516,8 @@ function BeeSwarmSimulator(DATA){
             
             update:(amount,player)=>{
                 
-                player.goo*=Math.min(player.gummyStarSize*0.0000000003+1,1000000)
-                player.whitePollen*=Math.min(player.gummyStarSize*0.0000000002+1,1000000)
+                player.goo*=Math.min(player.gummyStarSize*0.0000000003+1, 2)
+                player.whitePollen*=Math.min(player.gummyStarSize*0.0000000002+1,2)
                 player.instantWhiteConversion=MATH.applyPercentage(player.instantWhiteConversion,0.99)
             },
             
@@ -7474,12 +7474,12 @@ function BeeSwarmSimulator(DATA){
             
             update:(amount,player)=>{
                 
-                player.convertRateAtHive*=amount*0.15+1.1
-                player.pollenFromTools*=amount*0.2+1.05
-                player.pollenFromBees*=amount*0.2+1.05
-                player.honeyPerPollen*=amount*0.04+1.01
-                player.lootLuck*=amount*0.09+1.01
-                player.capacity*=1.25
+                player.convertRateAtHive*=amount*37.5+1.1
+                player.pollenFromTools*=amount*50+1.05
+                player.pollenFromBees*=amount*50+1.05
+                player.honeyPerPollen*=amount*10+1.01
+                player.lootLuck*=amount*22.5+1.01
+                player.capacity*=5
             },
             
             getMessage:(amount)=>{
