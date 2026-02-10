@@ -5516,9 +5516,9 @@ function BeeSwarmSimulator(DATA){
             
             update:(amount,player)=>{
                 
-                player.goo*=Math.min(player.gummyStarSize*0.0000000003+1,2)
-                player.whitePollen*=Math.min(player.gummyStarSize*0.0000000002+1,2)
-                player.instantWhiteConversion=MATH.applyPercentage(player.instantWhiteConversion,0.2)
+                player.goo*=Math.min(player.gummyStarSize*0.0000000003+1,1000000)
+                player.whitePollen*=Math.min(player.gummyStarSize*0.0000000002+1,1000000)
+                player.instantWhiteConversion=MATH.applyPercentage(player.instantWhiteConversion,0.99)
             },
             
             getMessage:(amount)=>{
