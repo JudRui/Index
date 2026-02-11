@@ -1464,22 +1464,22 @@ function BeeSwarmSimulator(DATA){
             }
         },
 
-        bronze_star_amulet_generator:{
+bronze_star_amulet_generator:{
             
             isMachine:true,requirements:function(player){
 
-                if(player.discoveredGifteds.length<5) return "Discover 5 gifted bee types to generate a Bronze Star Amulet!"
+                if(player.discoveredGifteds.length<1) return "Discover 1 gifted bee types to generate a Bronze Star Amulet!"
                 
-                if(player.honey<25000000) return 'You need 25M honey to generate a Bronze Star Amulet!'
+                if(player.honey<1000000) return 'You need 1M honey to generate a Bronze Star Amulet!'
 
             },minX:-35.5-Math.sin(45.6*0.0174533)*3-Math.cos(45.6*0.0174533)*12.5-3,maxX:-35.5-Math.sin(45.6*0.0174533)*3-Math.cos(45.6*0.0174533)*12.5+3,minY:11,maxY:50,minZ:-2.75+Math.cos(45.6*0.0174533)*3-Math.sin(45.6*0.0174533)*12.5-3,maxZ:-2.75+Math.cos(45.6*0.0174533)*3-Math.sin(45.6*0.0174533)*12.5+3,message:'Generate a Bronze Star Amulet(25M Honey)',func:function(player){
                 
-                player.honey-=25000000
-                player.addMessage('-25,000,000 Honey')
+                player.honey-1000000
+                player.addMessage('-1,000,000 honey i wuv u')
 
-                let amulet=['*1.25 capacityMultiplier']
+                let amulet=['*3.25 capacityMultiplier']
 
-                amulet.push(...MATH.selectFromArray(['*'+MATH.random(1.05,1.15).toFixed(2)+' POLLEN','*'+MATH.random(1.15,1.3).toFixed(2)+' redPollen','*'+MATH.random(1.15,1.3).toFixed(2)+' bluePollen','*'+MATH.random(1.15,1.3).toFixed(2)+' whitePollen','*'+MATH.random(1.15,1.3).toFixed(2)+' pollenFromBees','+'+MATH.random(0.03,0.08).toFixed(2)+' INSTANT_CONVERSION','*'+MATH.random(1.1,1.2).toFixed(2)+' convertRate','+'+MATH.random(0.01,0.05).toFixed(2)+' beeAbilityRate','+'+MATH.random(0.01,0.05).toFixed(2)+' criticalChance'],2))
+                amulet.push(...MATH.selectFromArray(['*'+MATH.random(26.25,31.25).toFixed(2)+' POLLEN','*'+MATH.random(26.25,31.25).toFixed(2)+' redPollen','*'+MATH.random(26.25,31.25).toFixed(2)+' bluePollen','*'+MATH.random(26.25,31.25).toFixed(2)+' whitePollen','*'+MATH.random(26.25,31.25).toFixed(2)+' pollenFromBees','+'+MATH.random(0.75,2.0).toFixed(2)+' INSTANT_CONVERSION','*'+MATH.random(26.25,30.0).toFixed(2)+' convertRate','+'+MATH.random(0.25,1.25).toFixed(2)+' beeAbilityRate','+'+MATH.random(0.25,1.25).toFixed(2)+' criticalChance'],2))
 
                 player.showGeneratedAmulet('bronzeStarAmulet',amulet)
             }
@@ -1498,9 +1498,9 @@ function BeeSwarmSimulator(DATA){
                 player.honey-=50000000
                 player.addMessage('-50,000,000 Honey')
 
-                let amulet=['*1.5 capacityMultiplier']
+                let amulet=['*5.5 capacityMultiplier']
 
-                amulet.push(...MATH.selectFromArray(['*'+MATH.random(1.05,1.15).toFixed(2)+' POLLEN','*'+MATH.random(1.15,1.4).toFixed(2)+' redPollen','*'+MATH.random(1.15,1.4).toFixed(2)+' bluePollen','*'+MATH.random(1.15,1.4).toFixed(2)+' whitePollen','*'+MATH.random(1.15,1.4).toFixed(2)+' pollenFromBees','+'+MATH.random(0.03,0.1).toFixed(2)+' INSTANT_CONVERSION','*'+MATH.random(1.1,1.25).toFixed(2)+' convertRate','+'+MATH.random(0.01,0.05).toFixed(2)+' beeAbilityRate','+'+MATH.random(0.01,0.05).toFixed(2)+' criticalChance'],3))
+                amulet.push(...MATH.selectFromArray(['*'+MATH.random(26.25,37.5).toFixed(2)+' POLLEN','*'+MATH.random(37.5,42.0).toFixed(2)+' redPollen','*'+MATH.random(37.5,42.0).toFixed(2)+' bluePollen','*'+MATH.random(37.5,42.0).toFixed(2)+' whitePollen','*'+MATH.random(37.5,42.0).toFixed(2)+' pollenFromBees','+'+MATH.random(0.75,2.5).toFixed(2)+' INSTANT_CONVERSION','*'+MATH.random(26.25,31.25).toFixed(2)+' convertRate','+'+MATH.random(0.25,1.25).toFixed(2)+' beeAbilityRate','+'+MATH.random(0.25,1.25).toFixed(2)+' criticalChance'],3))
 
                 player.showGeneratedAmulet('silverStarAmulet',amulet)
             }
@@ -1519,9 +1519,9 @@ function BeeSwarmSimulator(DATA){
                 player.honey-=250000000
                 player.addMessage('-250,000,000 Honey')
 
-                let amulet=['*1.75 capacityMultiplier']
+                let amulet=['*6.75 capacityMultiplier']
 
-                amulet.push(...MATH.selectFromArray(['*'+MATH.random(1.05,1.15).toFixed(2)+' POLLEN','*'+MATH.random(1.15,1.5).toFixed(2)+' redPollen','*'+MATH.random(1.15,1.5).toFixed(2)+' bluePollen','*'+MATH.random(1.15,1.5).toFixed(2)+' whitePollen','*'+MATH.random(1.15,1.5).toFixed(2)+' pollenFromBees','+'+MATH.random(0.03,0.1).toFixed(2)+' INSTANT_CONVERSION','*'+MATH.random(1.1,1.25).toFixed(2)+' convertRate','+'+MATH.random(0.01,0.05).toFixed(2)+' beeAbilityRate','+'+MATH.random(0.01,0.05).toFixed(2)+' criticalChance'],4))
+                amulet.push(...MATH.selectFromArray(['*'+MATH.random(26.25,43.75).toFixed(2)+' POLLEN','*'+MATH.random(43.75,48.75).toFixed(2)+' redPollen','*'+MATH.random(43.75,48.75).toFixed(2)+' bluePollen','*'+MATH.random(43.75,48.75).toFixed(2)+' whitePollen','*'+MATH.random(43.75,48.75).toFixed(2)+' pollenFromBees','+'+MATH.random(0.75,2.5).toFixed(2)+' INSTANT_CONVERSION','*'+MATH.random(26.25,31.25).toFixed(2)+' convertRate','+'+MATH.random(0.25,1.25).toFixed(2)+' beeAbilityRate','+'+MATH.random(0.25,1.25).toFixed(2)+' criticalChance'],4))
 
                 player.showGeneratedAmulet('goldStarAmulet',amulet)
             }
@@ -1540,15 +1540,15 @@ function BeeSwarmSimulator(DATA){
                 player.honey-=1000000000
                 player.addMessage('-1,000,000,000 Honey')
 
-                let amulet=['*2 capacityMultiplier']
+                let amulet=['*9 capacityMultiplier']
 
-                amulet.push(...MATH.selectFromArray(['*'+MATH.random(1.05,1.15).toFixed(2)+' POLLEN','*'+MATH.random(1.15,1.5).toFixed(2)+' redPollen','*'+MATH.random(1.15,1.5).toFixed(2)+' bluePollen','*'+MATH.random(1.15,1.5).toFixed(2)+' whitePollen','*'+MATH.random(1.15,1.5).toFixed(2)+' pollenFromBees','+'+MATH.random(0.03,0.1).toFixed(2)+' INSTANT_CONVERSION','*'+MATH.random(1.1,1.3).toFixed(2)+' convertRate','+'+MATH.random(0.01,0.05).toFixed(2)+' beeAbilityRate','+'+MATH.random(0.01,0.05).toFixed(2)+' criticalChance'],5))
+                amulet.push(...MATH.selectFromArray(['*'+MATH.random(26.25,50.0).toFixed(2)+' POLLEN','*'+MATH.random(43.75,48.75).toFixed(2)+' redPollen','*'+MATH.random(43.75,48.75).toFixed(2)+' bluePollen','*'+MATH.random(43.75,48.75).toFixed(2)+' whitePollen','*'+MATH.random(43.75,48.75).toFixed(2)+' pollenFromBees','+'+MATH.random(0.75,2.5).toFixed(2)+' INSTANT_CONVERSION','*'+MATH.random(26.25,31.25).toFixed(2)+' convertRate','+'+MATH.random(0.25,1.25).toFixed(2)+' beeAbilityRate','+'+MATH.random(0.25,1.25).toFixed(2)+' criticalChance'],5))
 
-                if(Math.random()<0.5){
+                let ps=['guidingStarPassive','starShowerPassive']
+                amulet.push('P '+ps[(Math.random()*ps.length)|0])
 
-                    let ps=['guidingStarPassive','starShowerPassive']
-                    amulet.push('P '+ps[(Math.random()*ps.length)|0])
-                }
+                ps.splice(ps.indexOf(ps[(Math.random()*ps.length)|0]),1)
+                amulet.push('P '+ps[(Math.random()*ps.length)|0])
 
                 player.showGeneratedAmulet('diamondStarAmulet',amulet)
             }
@@ -1567,9 +1567,9 @@ function BeeSwarmSimulator(DATA){
                 player.honey-=5000000000
                 player.addMessage('-5,000,000,000 Honey')
 
-                let amulet=['*2.5 capacityMultiplier']
+                let amulet=['*12.5 capacityMultiplier']
 
-                amulet.push(...MATH.selectFromArray(['*'+MATH.random(1.05,1.2).toFixed(2)+' POLLEN','*'+MATH.random(1.2,1.7).toFixed(2)+' redPollen','*'+MATH.random(1.2,1.7).toFixed(2)+' bluePollen','*'+MATH.random(1.2,1.7).toFixed(2)+' whitePollen','*'+MATH.random(1.2,1.7).toFixed(2)+' pollenFromBees','+'+MATH.random(0.03,0.15).toFixed(2)+' INSTANT_CONVERSION','*'+MATH.random(1.1,1.4).toFixed(2)+' convertRate','+'+MATH.random(0.01,0.08).toFixed(2)+' beeAbilityRate','+'+MATH.random(0.01,0.08).toFixed(2)+' criticalChance'],5))
+                amulet.push(...MATH.selectFromArray(['*'+MATH.random(26.25,62.5).toFixed(2)+' POLLEN','*'+MATH.random(56.0,68.0).toFixed(2)+' redPollen','*'+MATH.random(56.0,68.0).toFixed(2)+' bluePollen','*'+MATH.random(56.0,68.0).toFixed(2)+' whitePollen','*'+MATH.random(56.0,68.0).toFixed(2)+' pollenFromBees','+'+MATH.random(0.75,3.75).toFixed(2)+' INSTANT_CONVERSION','*'+MATH.random(26.25,31.25).toFixed(2)+' convertRate','+'+MATH.random(0.25,1.25).toFixed(2)+' beeAbilityRate','+'+MATH.random(0.25,1.25).toFixed(2)+' criticalChance'],5))
 
                 let gotten=['guidingStarPassive','starShowerPassive','popStarPassive','scorchingStarPassive','gummyStarPassive','starSawPassive']
 
@@ -1577,17 +1577,22 @@ function BeeSwarmSimulator(DATA){
 
                 amulet.push('P '+gotten)
 
-                if(Math.random()<0.3333){
+                let ps=['guidingStarPassive','starShowerPassive','popStarPassive','scorchingStarPassive','gummyStarPassive','starSawPassive']
+                ps.splice(ps.indexOf(gotten),1)
+                amulet.push('P '+ps[(Math.random()*ps.length)|0])
 
-                    let ps=['guidingStarPassive','starShowerPassive','popStarPassive','scorchingStarPassive','gummyStarPassive','starSawPassive']
-                    ps.splice(ps.indexOf(gotten),1)
-                    amulet.push('P '+ps[(Math.random()*ps.length)|0])
+                if(Math.random()<0.5){
+                    
+                    let ps2=['guidingStarPassive','starShowerPassive','popStarPassive','scorchingStarPassive','gummyStarPassive','starSawPassive']
+                    ps2.splice(ps2.indexOf(gotten),1)
+                    ps2.splice(ps2.indexOf(ps[(Math.random()*ps.length)|0]),1)
+                    amulet.push('P '+ps2[(Math.random()*ps2.length)|0])
                 }
 
                 player.showGeneratedAmulet('supremeStarAmulet',amulet)
             }
         },
-
+        
         strawberry_dispenser:{
 
             isMachine:true,requirements:function(player){
