@@ -1477,7 +1477,7 @@ bronze_star_amulet_generator:{
                 player.honey-1000000
                 player.addMessage('-1,000,000 honey i wuv u')
 
-                let amulet=['*3.25 capacityMultiplier']
+                let amulet=['*10.25 capacityMultiplier']
 
                 amulet.push(...MATH.selectFromArray(['*'+MATH.random(26.25,31.25).toFixed(2)+' POLLEN','*'+MATH.random(26.25,31.25).toFixed(2)+' redPollen','*'+MATH.random(26.25,31.25).toFixed(2)+' bluePollen','*'+MATH.random(26.25,31.25).toFixed(2)+' whitePollen','*'+MATH.random(26.25,31.25).toFixed(2)+' pollenFromBees','+'+MATH.random(0.75,2.0).toFixed(2)+' INSTANT_CONVERSION','*'+MATH.random(26.25,30.0).toFixed(2)+' convertRate','+'+MATH.random(0.25,1.25).toFixed(2)+' beeAbilityRate','+'+MATH.random(0.25,1.25).toFixed(2)+' criticalChance'],2))
 
@@ -1498,7 +1498,7 @@ bronze_star_amulet_generator:{
                 player.honey-=50000000
                 player.addMessage('-50,000,000 Honey')
 
-                let amulet=['*5.5 capacityMultiplier']
+                let amulet=['*15.5 capacityMultiplier']
 
                 amulet.push(...MATH.selectFromArray(['*'+MATH.random(26.25,37.5).toFixed(2)+' POLLEN','*'+MATH.random(37.5,42.0).toFixed(2)+' redPollen','*'+MATH.random(37.5,42.0).toFixed(2)+' bluePollen','*'+MATH.random(37.5,42.0).toFixed(2)+' whitePollen','*'+MATH.random(37.5,42.0).toFixed(2)+' pollenFromBees','+'+MATH.random(0.75,2.5).toFixed(2)+' INSTANT_CONVERSION','*'+MATH.random(26.25,31.25).toFixed(2)+' convertRate','+'+MATH.random(0.25,1.25).toFixed(2)+' beeAbilityRate','+'+MATH.random(0.25,1.25).toFixed(2)+' criticalChance'],3))
 
@@ -1519,7 +1519,7 @@ bronze_star_amulet_generator:{
                 player.honey-=250000000
                 player.addMessage('-250,000,000 Honey')
 
-                let amulet=['*6.75 capacityMultiplier']
+                let amulet=['*26.75 capacityMultiplier']
 
                 amulet.push(...MATH.selectFromArray(['*'+MATH.random(26.25,43.75).toFixed(2)+' POLLEN','*'+MATH.random(43.75,48.75).toFixed(2)+' redPollen','*'+MATH.random(43.75,48.75).toFixed(2)+' bluePollen','*'+MATH.random(43.75,48.75).toFixed(2)+' whitePollen','*'+MATH.random(43.75,48.75).toFixed(2)+' pollenFromBees','+'+MATH.random(0.75,2.5).toFixed(2)+' INSTANT_CONVERSION','*'+MATH.random(26.25,31.25).toFixed(2)+' convertRate','+'+MATH.random(0.25,1.25).toFixed(2)+' beeAbilityRate','+'+MATH.random(0.25,1.25).toFixed(2)+' criticalChance'],4))
 
@@ -1540,7 +1540,7 @@ bronze_star_amulet_generator:{
                 player.honey-=1000000000
                 player.addMessage('-1,000,000,000 Honey')
 
-                let amulet=['*9 capacityMultiplier']
+                let amulet=['*39 capacityMultiplier']
 
                 amulet.push(...MATH.selectFromArray(['*'+MATH.random(26.25,50.0).toFixed(2)+' POLLEN','*'+MATH.random(43.75,48.75).toFixed(2)+' redPollen','*'+MATH.random(43.75,48.75).toFixed(2)+' bluePollen','*'+MATH.random(43.75,48.75).toFixed(2)+' whitePollen','*'+MATH.random(43.75,48.75).toFixed(2)+' pollenFromBees','+'+MATH.random(0.75,2.5).toFixed(2)+' INSTANT_CONVERSION','*'+MATH.random(26.25,31.25).toFixed(2)+' convertRate','+'+MATH.random(0.25,1.25).toFixed(2)+' beeAbilityRate','+'+MATH.random(0.25,1.25).toFixed(2)+' criticalChance'],5))
 
@@ -1567,7 +1567,7 @@ bronze_star_amulet_generator:{
                 player.honey-=5000000000
                 player.addMessage('-5,000,000,000 Honey')
 
-                let amulet=['*12.5 capacityMultiplier']
+                let amulet=['*62.5 capacityMultiplier']
 
                 amulet.push(...MATH.selectFromArray(['*'+MATH.random(26.25,62.5).toFixed(2)+' POLLEN','*'+MATH.random(56.0,68.0).toFixed(2)+' redPollen','*'+MATH.random(56.0,68.0).toFixed(2)+' bluePollen','*'+MATH.random(56.0,68.0).toFixed(2)+' whitePollen','*'+MATH.random(56.0,68.0).toFixed(2)+' pollenFromBees','+'+MATH.random(0.75,3.75).toFixed(2)+' INSTANT_CONVERSION','*'+MATH.random(26.25,31.25).toFixed(2)+' convertRate','+'+MATH.random(0.25,1.25).toFixed(2)+' beeAbilityRate','+'+MATH.random(0.25,1.25).toFixed(2)+' criticalChance'],5))
 
