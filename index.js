@@ -21386,7 +21386,7 @@ bronze_star_amulet_generator:{
         
         shovel:{
             
-            collectPattern:[[4,4],[4,-1]],
+            collectPattern:[[-3,-3],[-2,-5],[-2,-4],[-2,-3],[-2,-2],[-2,-1],[-1,-5],[-1,-4],[-1,-3],[-1,-2],[-1,-1],[0,-6],[0,-5],[0,-4],[0,-3],[0,-2],[0,-1],[0,0],[1,-5],[1,-4],[1,-3],[1,-2],[1,-1],[2,-5],[2,-4],[2,-3],[2,-2],[2,-1],[3,-3]],
             collectAmount:500,
             cooldown:0.15,
             mesh:function(box,cylinder,sphere,star){
@@ -21394,7 +21394,7 @@ bronze_star_amulet_generator:{
                 box(-0.3,0,0.6,0.1,0.1,0.8,false,[0.5,0.2,0])
                 box(-0.3,0,1.2,0.3,0.1,0.4,false,[0.2,0.2,0.2])
             },
-            desc:'A trusty shovel.<br><br>Collects 5 pollen from 2 flowers every 1s.',
+            desc:'A trusty shovel, totally doesnt have gummyballer stats.<br><br>Collects 5 pollen from 2 flowers every 1s?',
             cost:['0 honey']
         },
 
