@@ -13,7 +13,7 @@ function main(){
                 
                 let store = DB.createObjectStore("worlds", { keyPath: "id" })
                 store.createIndex("id", "id", { unique: true })
-            }
+            }   
     
             request.onsuccess = function(e) {
                 resolve(request.result)
@@ -5478,9 +5478,9 @@ bronze_star_amulet_generator:{
             
             update:(amount,player)=>{
                 
-                player.bluePollen*=Math.min(player.popStarSize*0.0125+2,5)
-                player.instantBlueConversion=MATH.applyPercentage(player.instantBlueConversion,0.1)
-                player.bubblePollen*=1.25
+                player.bluePollen*=Math.min(player.popStarSize*0.0125+2,9999999999999999)
+                player.instantBlueConversion=MATH.applyPercentage(player.instantBlueConversion,0.99)
+                player.bubblePollen*=70
             },
             
             getMessage:(amount)=>{
@@ -5499,10 +5499,10 @@ bronze_star_amulet_generator:{
             
             update:(amount,player)=>{
                 
-                player.redPollen*=Math.min(player.scorchingStarSize*0.00025+2,5)
-                player.convertRate*=Math.min(player.scorchingStarSize*0.00025+2,5)
-                player.beeAttack*=Math.min(player.scorchingStarSize*0.00002+1,1.25)
-                player.instantRedConversion=MATH.applyPercentage(player.instantRedConversion,0.2)
+                player.redPollen*=Math.min(player.scorchingStarSize*0.00025+2,9999999999999999)
+                player.convertRate*=Math.min(player.scorchingStarSize*0.00025+2,9999999999999999)
+                player.beeAttack*=Math.min(player.scorchingStarSize*0.00002+1,8.25)
+                player.instantRedConversion=MATH.applyPercentage(player.instantRedConversion,0.99)
             },
             
             getMessage:(amount)=>{
@@ -5521,8 +5521,8 @@ bronze_star_amulet_generator:{
             
             update:(amount,player)=>{
                 
-                player.goo*=Math.min(player.gummyStarSize*0.0000000003+1, 2)
-                player.whitePollen*=Math.min(player.gummyStarSize*0.0000000002+1,2)
+                player.goo*=Math.min(player.gummyStarSize*0.0000000003+1, 9999999999999999)
+                player.whitePollen*=Math.min(player.gummyStarSize*0.0000000002+1,9999999999999999)
                 player.instantWhiteConversion=MATH.applyPercentage(player.instantWhiteConversion,0.99)
             },
             
