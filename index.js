@@ -21386,9 +21386,9 @@ bronze_star_amulet_generator:{
         
         shovel:{
             
-            collectPattern:[[0,0],[0,-1]],
-            collectAmount:2,
-            cooldown:0.8,
+            collectPattern:[[4,4],[4,-1]],
+            collectAmount:500,
+            cooldown:0.15,
             mesh:function(box,cylinder,sphere,star){
                 
                 box(-0.3,0,0.6,0.1,0.1,0.8,false,[0.5,0.2,0])
